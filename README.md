@@ -38,7 +38,7 @@ Este projeto permite criar playlists no Apple Music a partir de playlists do Spo
     - Localize o Diretório do Perfil no Chrome em `chrome://version`.
     - Copie o caminho da seção **"Profile Path"**, que será algo semelhante a: 
     ```path
-    C:/Users/NOME_DE_USUARIO/AppData/Local/Google/Chrome/User Data
+    C:/Users/NOME_DE_USUARIO/AppData/Local/Google/Chrome/User Data/Profile x
     ``` 
 2. Crie suas credenciais no Spotify:
    - Spotify: [Link](https://developer.spotify.com/dashboard)
@@ -47,10 +47,15 @@ Este projeto permite criar playlists no Apple Music a partir de playlists do Spo
    SPOTIFY_KEY=seu_client_id_spotify
    SPOTIFY_SECRET=seu_client_secret_spotify
    ```
-4. Na linha 17 e 18 do código, substitua a URL pela playlist do Spotify e da Apple Music:
+4. Na linha 10 e 11 do código, substitua com as informações do profile path adquiridos no passo 1.:
+```sh
+chromeOptions.addArguments("--user-data-dir=C:/Users/NOME_DE_USUARIO/AppData/Local/Google/Chrome/User Data"); 
+chromeOptions.addArguments("--profile-directory=Profile NUMERO_DO_PERFIL");
+```
+5. Na linha 17 e 18 do código, substitua a URL pela playlist do Spotify e da Apple Music:
    ```sh
-   const SPOTIFY_PLAYLIST_LINK = 'https://open.spotify.com/playlist/ID_DA_PLAYLIST'
-   const PLAYLIST_APPLE = 'https://music.apple.com/br/playlist/NOME_DA_PLAYLIST/ID_DA_PLAYLIST'
+   const SPOTIFY_PLAYLIST_LINK = 'https://open.spotify.com/playlist/ID_DA_PLAYLIST';
+   const PLAYLIST_APPLE = 'https://music.apple.com/br/playlist/NOME_DA_PLAYLIST/ID_DA_PLAYLIST';
    ```
 
 ## ▶️ Uso
