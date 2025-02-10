@@ -49,8 +49,8 @@ Este projeto permite criar playlists no Apple Music a partir de playlists do Spo
    ```
 4. Na linha 10 e 11 do código, substitua com as informações do profile path adquiridos no passo 1.:
 ```sh
-chromeOptions.addArguments("--user-data-dir=C:/Users/NOME_DE_USUARIO/AppData/Local/Google/Chrome/User Data"); 
-chromeOptions.addArguments("--profile-directory=Profile NUMERO_DO_PERFIL");
+    chromeOptions.addArguments("--user-data-dir=C:/Users/NOME_DE_USUARIO/AppData/Local/Google/Chrome/User Data"); 
+    chromeOptions.addArguments("--profile-directory=Profile NUMERO_DO_PERFIL");
 ```
 5. Na linha 17 e 18 do código, substitua a URL pela playlist do Spotify e da Apple Music:
    ```sh
