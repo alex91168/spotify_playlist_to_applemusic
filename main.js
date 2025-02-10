@@ -14,8 +14,8 @@ let driver;
 
 const SPOTIFY_KEY = process.env.SPOTIFY_KEY;
 const SPOTIFY_SECRET = process.env.SPOTIFY_SECRET;
-const SPOTIFY_PLAYLIST_LINK = 'https://open.spotify.com/playlist/6dQtdZzWHQMUCxh3re5OcN';
-const PLAYLIST_APPLE = 'https://music.apple.com/br/playlist/bones/pl.u-RRbVvB1umdaVjbG';
+const SPOTIFY_PLAYLIST_LINK = 'https://open.spotify.com/playlist/ID_DA_PLAYLIST';
+const PLAYLIST_APPLE = 'https://music.apple.com/br/playlist/NOME_DA_PLAYLIST/ID_DA_PLAYLIST';
 
 const spotifyAuth = async () => {
    const url = "https://accounts.spotify.com/api/token";
