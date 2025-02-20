@@ -1,6 +1,6 @@
 # Apple Music Playlist Creator
 
-Este projeto permite criar playlists no Apple Music a partir de playlists do Spotify. Ele autentica no Spotify para obter as músicas e depois pesquisa os vídeos correspondentes na plataforma da Apple Music, adicionando-os a uma playlist criada pelo usuário.
+Este projeto permite criar playlists no Apple Music a partir de playlists do Spotify. Ele autentica no Spotify para obter as músicas e depois pesquisa as musicas correspondentes na plataforma da Apple Music, adicionando-os a uma playlist criada pelo usuário.
 
 ## 🚀 Funcionalidades
 - Autenticação na API do Spotify
